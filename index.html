@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media.css">
 </head>
@@ -13,14 +14,25 @@
             <div id="imagens">
                 
             </div>
+                
+            <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça seu login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
+                <form action="ilogin" method="post">
+                        <div class="campo">
+                            <span class="material-symbols-outlined">email</span>
+                            <input type="email" name="login" id="ilogin" placeholder="Email" required maxlength="30" autocomplete="email">
+                            <label for="ilogin">Login</label>
+                        </div>
+                        <div class="campo">
+                            <span class="material-symbols-outlined">vpn_key</span>
+                            <input type="password" name="senha" id="isenha" autocomplete="new-password" readonly minlength="6" maxlength="10" placeholder="Senha">
+                            <label for="isenha">Senha</label>
+                        </div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
 
-
-            <div id="formulario">
-                <form action="login.php" method="post"></form>
-
-
+                </form>
             </div>
         </section>
     </main>

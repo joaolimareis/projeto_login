@@ -42,7 +42,6 @@ body,html{
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
-    
     transition: width 0.2s, height 0.2s;
     transition-timing-function: ease;
 }
@@ -56,8 +55,17 @@ body,html{
     height: 200px;
 }
 
-#login > #formulario{
+section#login > div#formulario{
     display: block;
-    padding: 20px;
+    padding: 10px;
+}
 
+#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.9em;
+}
+#formulario > p{
+    font-size: 0.8em;
+    
 }
